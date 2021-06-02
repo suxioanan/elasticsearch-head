@@ -24,16 +24,23 @@ elasticsearch-head 集群健康值: 未连接
 
 打开路径 "..\elasticsearch\config\ " 下的 elasticsearch.yml 文件，在文件末尾添加如下代码：
 
+
     http.cors.enabled: true
+    
     http.cors.allow-origin: "*"
+    
     http.cors.allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
+    
     http.cors.allow-headers: "X-Requested-With, Content-Type, Content-Length, X-User"
+    
 
 如果继续报错
  elasticsearch-5x下的 config/elasticsearch.yml
 
     http.cors.enabled: true
+    
     http.cors.allow-origin: "*"
+    
 
     elasticsearch-head下 Gruntfile.js
 
